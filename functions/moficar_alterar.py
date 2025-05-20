@@ -14,4 +14,3 @@ class ModificarOuAlterar:
         #aqui basicamente ele faz um if E else pra alterar os valor dada determinada conticao - E ASSIM PARA DOS DOS ESTADOS
         df_copia_when = df_novo.withColumn("nome_estado", when(df.estado == "RR", "RORAIMA").otherwise("OUTROS"))
 
-        df_copia_when.show()
